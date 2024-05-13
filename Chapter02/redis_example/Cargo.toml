@@ -1,0 +1,7 @@
+[package]
+name = "redis_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+redis = "0.25.3"
