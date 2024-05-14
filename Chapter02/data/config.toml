@@ -3,14 +3,14 @@ xml_file = "../data/sales.xml"
 json_file = "../data/sales.json"
 
 [redis]
-host = "localhost"
+host = "redis://:2887@202.120.40.114:36379"
 
 [sqlite]
 db_file = "../data/sales.db"
 
 [postgresql]
-username = "postgres"
-password = "post"
-host = "localhost"
-port = "5432"
-database = "Rust2018"
+username = "chenhao"
+password = "2887"
+host = "202.120.40.114"
+port = "35432"
+database = "chenhao"
