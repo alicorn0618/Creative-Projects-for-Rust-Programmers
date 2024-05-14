@@ -5,7 +5,7 @@
 // curl -X POST http://localhost:8080/data -d "File contents."
 // curl -X GET http://localhost:8080/a/b
 
-use actix_web::Error;
+use actix_web::{delete, Error};
 use actix_web::{web, web::Path, App, HttpRequest, HttpResponse, HttpServer, Responder};
 use futures::{
     future::{ok, Future},
@@ -18,5 +18,8 @@ use std::io::Write;
 fn flush_stdout() {
     std::io::stdout().flush().unwrap();
 }
+
+#[delete()]
+async fn delete_file(info: Path)
 
 fn main() {}
